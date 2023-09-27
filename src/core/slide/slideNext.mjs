@@ -24,5 +24,5 @@ export default function slideNext(speed = this.params.speed, runCallbacks = true
   if (params.rewind && swiper.isEnd) {
     return swiper.slideTo(0, speed, runCallbacks, internal);
   }
-  return swiper.slideTo(swiper.activeIndex + increment);
+  return swiper.slideTo(swiper.activeIndex + increment, speed, runCallbacks, internal);
 }
